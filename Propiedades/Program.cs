@@ -14,10 +14,9 @@ class Sale
     private int total;
     private DateTime date;
 
-
-
-    //* Las propiedades que son publicas normalmente empiezan con Mayuscula
-    public int Total { 
+    //* Las PROPIEDADES que son publicas normalmente empiezan con Mayuscula.
+    public int Total
+    {
         get { return total; } 
         set
         { 
@@ -25,7 +24,7 @@ class Sale
                 value = 0;
             total = value;
         } 
-    } 
+    }
 
     public string Date 
     {
