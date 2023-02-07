@@ -1,0 +1,32 @@
+﻿// ================ SOBRECARGA DE METODOS ================
+
+
+Math math = new Math();
+Console.WriteLine(math.Sum("2", "2"));
+
+int[] numbers = new int[] {1,1,1,1};
+Console.WriteLine(math.Sum(numbers));
+
+class Math
+{
+    public int Sum(int a, int b)
+    {
+        return a + b;
+    }
+    public int Sum(string a, string b)
+    {
+        return int.Parse(a) + int.Parse(b);
+    }
+
+    public int Sum(int[] numbers)
+    {
+        int result = 0;
+
+        foreach (int n in numbers)
+        {
+            result += n;
+        }
+        return result;
+
+    }
+}
